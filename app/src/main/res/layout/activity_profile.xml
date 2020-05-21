@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="3dp"
+                android:text="Name"
+                android:layout_gravity="center"
+                android:gravity="start|center"/>
+
+            <EditText
+                android:id="@+id/userNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="start|center_vertical"
+                android:hint="User Name"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="3dp"
+                android:text="Email"
+                android:layout_gravity="center"
+                android:gravity="start|center"/>
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="start|center_vertical"
+                android:hint="Email"
+                android:focusable="false"
+                android:enabled="false"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="3dp"
+                android:text="Phone Number"
+                android:layout_gravity="center"
+                android:gravity="start|center"/>
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="start|center_vertical"
+                android:hint="03314088500"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="3dp"
+                android:text="City"
+                android:layout_gravity="center"
+                android:gravity="start|center"/>
+
+            <EditText
+                android:id="@+id/cityEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="start|center_vertical"
+                android:hint="City"
+                android:textSize="16sp"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="3dp"
+                android:text="Address"
+                android:layout_gravity="center"
+                android:gravity="start|center"/>
+
+            <EditText
+                android:id="@+id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="start|center_vertical"
+                android:hint="Address"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>

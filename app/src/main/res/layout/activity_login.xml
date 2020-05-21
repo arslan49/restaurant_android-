@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.LoginActivity">
+
+    <include
+        android:id="@+id/top_toolBar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/top_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_login_screen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:gravity="center"
+                    android:text="Saviory"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/userNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/header"
+                android:layout_marginStart="@dimen/dimen_21"
+                android:layout_marginTop="@dimen/dimen_21"
+                android:layout_marginEnd="@dimen/dimen_21"
+                android:text="test@gmail.com"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="start|center_vertical"
+                android:hint="abc@gmail.com"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:text="1234567"
+                android:layout_height="60dp"
+                android:layout_below="@+id/userNameEt"
+                android:layout_margin="@dimen/dimen_21"
+                android:gravity="start|center_vertical"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/passwordEt"
+                android:layout_margin="@dimen/dimen_21"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/avenir_medium"
+                android:textSize="16sp"
+                android:text="Login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/creatAccountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Create Account ?"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@id/loginBtn"
+                android:gravity="end"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/avenir_medium"
+                android:layout_margin="@dimen/dimen_21"/>
+
+            <TextView
+                android:id="@+id/forgotPasswordTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Forgot Password ?"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="start"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/loginBtn"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/avenir_medium"
+                android:layout_margin="@dimen/dimen_21"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallPulseIndicator" />
+</RelativeLayout>

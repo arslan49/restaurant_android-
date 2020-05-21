@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "328014272955",
+    "firebase_url": "https://food-management-d235a.firebaseio.com",
+    "project_id": "food-management-d235a",
+    "storage_bucket": "food-management-d235a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328014272955:android:81955d59296cfda0d48c9e",
+        "android_client_info": {
+          "package_name": "com.example.foodmanagment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328014272955-uqjhbltcsds3m3np86h105r2cimboqqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7yu8PSscdn9RW6VnADt05CiNAXoSRWEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328014272955-uqjhbltcsds3m3np86h105r2cimboqqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

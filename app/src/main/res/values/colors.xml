@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C6AED</color>
+    <color name="colorPrimaryDark">#053C94</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="edit_text_color">#888888</color>
+    <color name="backgound">#E5E5E5</color>
+    <color name="light_gray">#F3F3F3</color>
+    <color name="black">#000000</color>
+    <color name="border">#9f9f9f</color>
+
+    <color name="logout_bg">#F9F9F9</color>
+    <color name="blue_text">#01A4B5</color>
+    <color name="drop_item_bg">#D1F4DB</color>
+    <color name="recycler_bg">#F0F4F8</color>
+    <color name="toast_green">#C5EB9A</color>
+    <color name="green">#7AC527</color>
+    <color name="red">#EC3131</color>
+
+    <color name="home_screen_bg">#F6F6F6</color>
+</resources>
